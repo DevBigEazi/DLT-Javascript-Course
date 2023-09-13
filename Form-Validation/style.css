@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer {
+    background: white;
+    margin: 5rem 0;
+    padding: 2rem;
+}
+
+.formContainer h1 {
+    margin-bottom: 1rem;
+}
+
+.formContainer .username, 
+.formContainer .email,
+.formContainer .password,
+.formContainer .confirmPassword {
+    margin-top: 1.5rem;
+}
+
+.formContainer label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.formContainer input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1.5px solid rgb(207, 199, 199);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+input.greenBorder {
+    border: 1.5px solid green;
+}
+
+input.redBorder {
+    border: 1.5px solid red;
+}
+
+.formContainer .username > div, 
+.formContainer .email > div, 
+.formContainer .password > div,
+.formContainer .confirmPassword > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-check {
+    color: green;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.error-check {
+    color: red;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.formContainer .errorMessage {
+    margin-top: 1rem;
+    color: red;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.formContainer button {
+    cursor: pointer;
+    background: rgb(7, 7, 107);
+    color: white;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
